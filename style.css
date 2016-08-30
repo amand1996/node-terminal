@@ -1,5 +1,6 @@
 body{
 	background-color: #660066;
+	margin-left: 1px;
 }
 
 @font-face {
@@ -12,11 +13,5 @@ li{
 	font-family: ubuntumono;
 	font-size: 15px;
 	font-weight: bold;
-	margin: 0px;
-	margin-top: 1px;
-	margin-left: 1px;
-}
-
-ul{
-
+	list-style: none;
 }
