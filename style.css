@@ -1,6 +1,6 @@
-body{
-	background-color: #660066;
-	margin-left: 1px;
+body {
+    background-color: #660066;
+    margin-left: 6px;
 }
 
 @font-face {
@@ -8,10 +8,19 @@ body{
     src: url(UbuntuMono-R.ttf);
 }
 
-li{
-	color: #ffffff;
-	font-family: ubuntumono;
-	font-size: 15px;
-	font-weight: bold;
-	list-style: none;
+li {
+    color: #ffffff;
+    font-family: ubuntumono;
+    font-size: 15px;
+    font-weight: bold;
+    list-style: none;
+}
+
+.cmd, .cmd:focus {
+    background-color: #660066;
+    color: #ffffff;
+    font-family: ubuntumono;
+    font-size: 15px;
+    outline: none;
+    border:none;
 }

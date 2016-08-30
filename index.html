@@ -5,19 +5,16 @@
     <meta charset="UTF-8">
     <title>Terminal</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script type="text/javascript" href="javascript.js"></script>
-    <script type="text/javascript" href="jquery-3.1.0.min.js"></script>
+    <script src="jquery-1.9.1.min.js"></script>
 </head>
 
 <body>
-    <div>
-        <ul>
-            <li>aman@aman-pc:~$</li>
-        </ul>
+    <div id="command_line">
+        <li>aman@aman-pc:~$ <input type="text" class="cmd" id="cmd0"></li>
     </div>
 </body>
 <script>
-require('./renderer.js')
+require('./renderer.js');
 </script>
-
+<script type="text/javascript" src="javascript.js"></script>
 </html>
