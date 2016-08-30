@@ -1,11 +1,13 @@
 {
   "name": "terminal-node",
   "version": "1.0.0",
-  "description": "A bash terminal for linux made using NodeJS",
-  "main": "index.js",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {},
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Aman Dwivedi",
+  "author": "Aman Dwivedi <aman_d1996@yahoo.com>",
   "license": "ISC"
 }
