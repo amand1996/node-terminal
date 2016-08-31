@@ -5,7 +5,7 @@ $(document).ready(function() {
         if (e.keyCode == 13) {
         	e.preventDefault();
             i++;
-            var text = '<li>aman@aman-pc:~$ <input type="text" class="cmd" id="cmd' + i + '"></li>';
+            var text = '<li>aman@aman-pc:~$ <input type="textarea" class="cmd" id="cmd' + i + '"></li>';
             $("#command_line").append(text);
             var selector = "#cmd" + i;
             $(selector).focus();
