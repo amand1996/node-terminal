@@ -30,8 +30,11 @@ app.on('window-all-closed', function () {
 })
 
 app.on('activate', function () {
-
   if (mainWindow === null) {
     createWindow()
   }
+})
+
+app.post('/child_process', function(req, res){
+  
 })
