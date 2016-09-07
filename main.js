@@ -1,6 +1,8 @@
-const electron = require('electron')
-const app = electron.app
-const BrowserWindow = electron.BrowserWindow
+const electron = require('electron');
+const app = electron.app;
+const BrowserWindow = electron.BrowserWindow;
+
+var renderer = require('./renderer.js');
 
 let mainWindow
 
