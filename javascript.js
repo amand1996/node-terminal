@@ -7,20 +7,20 @@ $(document).ready(function() {
             var id_old = "#cmd"+i;
             $(id_old).attr('readonly', true);
 
-            function getChildProcessData(){
-                var child_process_exec = $(id_old).val();
-                return child_process_exec;
-            }
+            // function getChildProcessData(){
+            //     var child_process_exec = $(id_old).val();
+            //     return child_process_exec;
+            // }
 
-            $.ajax({
-                url:"/child_process",
-                data: getChildProcessData(),
-                type:"POST",
-                async:true,
-                success: function(data){
+            // $.ajax({
+            //     url:"/child_process",
+            //     data: getChildProcessData(),
+            //     type:"POST",
+            //     async:true,
+            //     success: function(data){
                     
-                }
-            });
+            //     }
+            // });
 
             i++;
             var text = '<li>aman@aman-pc:~$ <input type="textarea" class="cmd" id="cmd' + i + '"></li>';

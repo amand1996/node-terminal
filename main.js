@@ -3,6 +3,7 @@ const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
 
 var renderer = require('./renderer.js');
+var spawn = require('child_process').spawn;
 
 let mainWindow
 
@@ -14,7 +15,6 @@ function createWindow () {
   //mainWindow.webContents.openDevTools()
 
   mainWindow.on('closed', function () {
-
     mainWindow = null
   })
 }
@@ -33,8 +33,4 @@ app.on('activate', function () {
   if (mainWindow === null) {
     createWindow()
   }
-})
-
-app.post('/child_process', function(req, res){
-  
 })
