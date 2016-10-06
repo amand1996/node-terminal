@@ -5,6 +5,7 @@ const BrowserWindow = electron.BrowserWindow;
 var renderer = require('./renderer.js');
 var spawn = require('child_process').spawn;
 
+
 let mainWindow
 
 function createWindow () {
@@ -12,7 +13,7 @@ function createWindow () {
 
   mainWindow.loadURL(`file://${__dirname}/index.html`)
 
-  //mainWindow.webContents.openDevTools()
+  mainWindow.webContents.openDevTools()
 
   mainWindow.on('closed', function () {
     mainWindow = null
@@ -20,7 +21,7 @@ function createWindow () {
 }
 
 
-app.on('ready', createWindow)
+app.on('ready', createWindow);
 
 app.on('window-all-closed', function () {
 

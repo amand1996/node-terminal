@@ -6,24 +6,19 @@ $(document).ready(function() {
         	e.preventDefault();
             var id_old = "#cmd"+i;
             $(id_old).attr('readonly', true);
+            var child_process = require('child_process');
 
-            // function getChildProcessData(){
-            //     var child_process_exec = $(id_old).val();
-            //     return child_process_exec;
-            // }
+            function getChildProcessData(){
+                var child_process_exec = $(id_old).val();
+                return child_process_exec;
+            }
+            var output = child_process.execSync(getChildProcessData());
+            var text = '<li>'+output+'</li>';
+            $("#command_line").append(text);
 
-            // $.ajax({
-            //     url:"/child_process",
-            //     data: getChildProcessData(),
-            //     type:"POST",
-            //     async:true,
-            //     success: function(data){
-                    
-            //     }
-            // });
 
             i++;
-            var text = '<li>aman@aman-pc:~$ <input type="textarea" class="cmd" id="cmd' + i + '"></li>';
+            var text = '<li>$ <input type="textarea" class="cmd" id="cmd' + i + '"></li>';
             $("#command_line").append(text);
             var selector = "#cmd" + i;
             $(selector).focus();
