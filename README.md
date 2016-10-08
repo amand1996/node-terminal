@@ -3,21 +3,16 @@ Cross platform terminal application. It has been developed on Node.js platform u
 
 ##OS Support
 Mac OS
-
 Linux
-
 Windows
 
 ##Requirements
 npm and Node.js needed.
-
 Electron Framework is needed.
 
 ##How to use?
 Clone the project and open the project in terminal.
-
 $ sudo npm install -g electron-prebuilt
-
 To start: $ electron .
 
 ##Author
