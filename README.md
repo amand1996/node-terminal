@@ -21,5 +21,4 @@ $ sudo npm install -g electron-prebuilt
 To start: $ electron .
 
 ##Author
-
 Aman Dwivedi <aman_d1996@yahoo.com>
