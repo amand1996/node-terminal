@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(57, 102, 0);
+    background-color: rgb(92, 0, 102);
     margin-left: 6px;
 }
 
@@ -17,7 +17,7 @@ li {
 }
 
 .cmd, .cmd:focus {
-    background-color: rgb(57, 102, 0);
+    background-color: rgb(92, 0, 102);
     color: #ffffff;
     font-family: ubuntumono;
     font-size: 15px;
