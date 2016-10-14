@@ -18,7 +18,7 @@ $(document).ready(function() {
 
 
             i++;
-            var text = '<li>$ <input type="textarea" class="cmd" id="cmd' + i + '"></li>';
+            var text = '<li>shell: <input type="textarea" class="cmd" id="cmd' + i + '"></li>';
             $("#command_line").append(text);
             var selector = "#cmd" + i;
             $(selector).focus();
